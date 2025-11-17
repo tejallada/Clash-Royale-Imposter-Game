@@ -1,3 +1,6 @@
+#made by Tej Allada
+#Last Update: 11/17/22
+
 import random
 
 # You can add/remove cards here
