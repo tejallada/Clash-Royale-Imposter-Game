@@ -50,8 +50,8 @@ def get_num_players():
     while True:
         try:
             n = int(input("How many players are playing? "))
-            if n < 2:
-                print("You need at least 2 players. Try again.")
+            if n < 3:
+                print("You need at least 3 players. Try again.")
             else:
                 return n
         except ValueError:
@@ -73,7 +73,7 @@ def assign_roles(names):
     num_players = len(names)
     imposter_index = random.randrange(num_players)
 
-    # Choose ONE card for all crewmates
+    # Choose ONE card for all non-imposters
     shared_card = random.choice(CLASH_ROYALE_CARDS)
 
     roles = []
